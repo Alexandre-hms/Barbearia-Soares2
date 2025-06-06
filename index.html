@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Barbearia Soares - Barbearia & Corte de Cabelo</title>
+  <meta name="title" content="Barbearia Soares - Barbearia & Corte de Cabelo">
+  <meta name="description" content="Este é um template HTML para barbearia, personalizado para Barbearia Soares.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - flaticon
+  -->
+  <link rel="stylesheet" href="assets/css/flaticon.min.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+  <style>
+    .success-message {
+      color: #fff;
+      background: #28a745;
+      padding: 12px 20px;
+      border-radius: 6px;
+      margin-top: 16px;
+      font-size: 1.1em;
+      text-align: center;
+      font-weight: bold;
+      display: none;
+    }
+    .error-message {
+      color: #fff;
+      background: #dc3545;
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 1em;
+      text-align: center;
+      font-weight: bold;
+      display: none;
+    }
+    .input-field:invalid {
+      border-color: #dc3545;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li class="header-top-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <p class="item-title">Ligue:</p>
+
+            <a href="tel:01234567895" class="item-link">012 (345) 67 895</a>
+          </li>
+
+          <li class="header-top-item">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+            <p class="item-title">Horário de Funcionamento:</p>
+
+            <p class="item-text">Segunda a Sexta, 08:00 às 19:00</p>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" aria-label="Facebook">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="YouTube">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" aria-label="Chat">
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">
+          Barbearia Soares
+          <span class="span">Barbearia & Estilo</span>
+        </a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Início</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#services" class="navbar-link" data-nav-link>Serviços</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#pricing" class="navbar-link" data-nav-link>Preços</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#gallery" class="navbar-link" data-nav-link>Galeria</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#appointment" class="navbar-link" data-nav-link>Agendamento</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contato" class="navbar-link" data-nav-link>Contato</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="Abrir menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#appointment" class="btn has-before">
+          <span class="span">Agendar</span>
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-before has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">Barbearia & Corte de Cabelo</h1>
+
+          <p class="hero-text">
+            Profissionais qualificados para cuidar do seu visual. Agende seu horário e viva uma nova experiência em barbearia!
+          </p>
+
+          <a href="#services" class="btn has-before">
+            <span class="span">Conheça nossos serviços</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services" aria-label="services">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Serviços que oferecemos</h2>
+
+          <p class="section-text text-center">
+            Atendimento personalizado, conforto e qualidade para você sair renovado.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <i class="flaticon-salon"></i>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Corte de Cabelo</a>
+                </h3>
+
+                <p class="card-text">
+                  Cortes modernos e tradicionais para todos os estilos.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="saiba mais">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <i class="flaticon-shampoo"></i>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Lavagem de Cabelo</a>
+                </h3>
+
+                <p class="card-text">
+                  Lavagem relaxante com produtos de alta qualidade.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="saiba mais">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <i class="flaticon-hot-stone"></i>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Tratamentos Corporais</a>
+                </h3>
+
+                <p class="card-text">
+                  Massagens e terapias para seu bem-estar.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="saiba mais">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <i class="flaticon-treatment"></i>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Beleza & Spa</a>
+                </h3>
+
+                <p class="card-text">
+                  Cuidados especiais para sua pele e barba.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="saiba mais">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <i class="flaticon-shaving-razor"></i>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Barba & Navalha</a>
+                </h3>
+
+                <p class="card-text">
+                  Barba desenhada e aparada com precisão.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="saiba mais">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <i class="flaticon-hair-dye"></i>
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Coloração de Cabelo</a>
+                </h3>
+
+                <p class="card-text">
+                  Diversas opções de cores para renovar seu visual.
+                </p>
+
+                <a href="#" class="card-btn" aria-label="saiba mais">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PRICING
+      -->
+
+      <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
+        style="background-image: url('./assets/images/pricing-bg.jpg')">
+        <div class="container">
+
+          <h2 class="h2 section-title text-center">Nossos Preços</h2>
+
+          <p class="section-text text-center">
+            Qualidade e preço justo para você cuidar do seu visual.
+          </p>
+
+          <div class="pricing-tab-container">
+
+            <ul class="tab-filter">
+
+              <li>
+                <button class="filter-btn active" data-filter-btn="all">
+                  <div class="btn-icon">
+                    <i class="flaticon-beauty-salon" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Todos</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="beauty-spa">
+                  <div class="btn-icon">
+                    <i class="flaticon-relax" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Beleza & Spa</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="body-treatments">
+                  <div class="btn-icon">
+                    <i class="flaticon-massage" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Tratamentos Corporais</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="face-washing">
+                  <div class="btn-icon">
+                    <i class="flaticon-spa" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Limpeza Facial</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="meditations">
+                  <div class="btn-icon">
+                    <i class="flaticon-yoga" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Meditação</p>
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn="shaving">
+                  <div class="btn-icon">
+                    <i class="flaticon-razor-blade" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="btn-text">Barba</p>
+                </button>
+              </li>
+
+            </ul>
+
+            <ul class="grid-list">
+
+              <li data-filter="shaving">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-1.jpg" width="90" height="90" alt="Corte de Cabelo & Ajuste"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Corte de Cabelo & Ajuste</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="89">R$89</data>
+
+                </div>
+              </li>
+
+              <li data-filter="shaving">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-2.jpg" width="90" height="90" alt="Barba & Limpeza Facial"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Barba & Limpeza Facial</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="45">R$45</data>
+
+                </div>
+              </li>
+
+              <li data-filter="face-washing">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Coloração & Lavagem"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Coloração & Lavagem</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="35">R$35</data>
+
+                </div>
+              </li>
+
+              <li data-filter="body-treatments">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Massagem Corporal"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Massagem Corporal</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="56">R$56</data>
+
+                </div>
+              </li>
+
+              <li data-filter="beauty-spa">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beleza & Spa"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Beleza & Spa</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="27">R$27</data>
+
+                </div>
+              </li>
+
+              <li data-filter="face-washing">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-6.jpg" width="90" height="90" alt="Limpeza Facial"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Limpeza Facial</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="63">R$63</data>
+
+                </div>
+              </li>
+
+              <li data-filter="body-treatments">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-7.jpg" width="90" height="90" alt="Massagem nas Costas"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Massagem nas Costas</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="43">R$43</data>
+
+                </div>
+              </li>
+
+              <li data-filter="meditations">
+                <div class="pricing-card">
+
+                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
+                    <img src="./assets/images/pricing-8.jpg" width="90" height="90" alt="Meditação & Massagem"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="wrapper">
+                    <h3 class="h3 card-title">Meditação & Massagem</h3>
+
+                    <p class="card-text">Limpo e prático, 30-40 minutos</p>
+                  </div>
+
+                  <data class="card-price" value="74">R$74</data>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="section gallery" id="gallery" aria-label="Galeria de fotos">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <h2 class="h2 section-title">Nossa Galeria</h2>
+
+              <p class="section-text">
+                Confira alguns dos nossos trabalhos e o ambiente da Barbearia Soares.
+              </p>
+            </div>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Ver mais fotos</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/gallery-1.jpg" width="422" height="550" loading="lazy" alt="Corte de Cabelo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Corte de Cabelo</h3>
+
+                  <p class="card-text">Barbearia & Serviços de Estilo</p>
+
+                  <a href="#" class="card-btn" aria-label="Saiba mais">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/gallery-2.jpg" width="422" height="550" loading="lazy" alt="Corte de Cabelo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Corte de Cabelo</h3>
+
+                  <p class="card-text">Barbearia & Serviços de Estilo</p>
+
+                  <a href="#" class="card-btn" aria-label="Saiba mais">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/gallery-3.jpg" width="422" height="550" loading="lazy" alt="Corte de Cabelo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Corte de Cabelo</h3>
+
+                  <p class="card-text">Barbearia & Serviços de Estilo</p>
+
+                  <a href="#" class="card-btn" aria-label="Saiba mais">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/gallery-4.jpg" width="422" height="550" loading="lazy" alt="Corte de Cabelo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Corte de Cabelo</h3>
+
+                  <p class="card-text">Barbearia & Serviços de Estilo</p>
+
+                  <a href="#" class="card-btn" aria-label="Saiba mais">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #APPOINTMENT
+      -->
+
+      <section class="section appoin" id="appointment" aria-label="appointment">
+        <div class="container">
+
+          <div class="appoin-card">
+
+            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+              <img src="./assets/images/appoin-banner-1.jpg" width="250" height="774" loading="lazy" alt=""
+                class="img-cover">
+            </figure>
+
+            <div class="card-content">
+
+              <h2 class="h2 section-title">Agende um Horário</h2>
+
+              <p class="section-text">
+                Preencha o formulário abaixo para agendar seu horário conosco.
+              </p>
+
+              <form action="" class="appoin-form">
+
+                <div class="input-wrapper">
+                  <input type="text" name="name" placeholder="Seu nome completo" required class="input-field">
+
+                  <input type="email" name="email_address" placeholder="E-mail" required class="input-field">
+                </div>
+
+                <div class="input-wrapper">
+                  <input type="text" name="phone" placeholder="Telefone" required class="input-field">
+
+                  <select name="category" class="input-field">
+
+                    <option value="Select category">Selecione a categoria</option>
+                    <option value="Beauty & spa">Beleza & Spa</option>
+                    <option value="Body massage">Massagem Corporal</option>
+                    <option value="Shaving & Facial">Barba & Limpeza Facial</option>
+                    <option value="Hair Color">Coloração de Cabelo</option>
+
+                  </select>
+                </div>
+
+                <input type="date" name="date" required class="input-field date">
+
+                <textarea name="message" placeholder="Escreva sua mensagem" required class="input-field"></textarea>
+
+                <button type="submit" class="form-btn">
+                  <span class="span">Agendar Agora</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+
+              </form>
+
+            </div>
+
+            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
+              <img src="./assets/images/appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt=""
+                class="img-cover">
+            </figure>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTATO
+      -->
+      <section id="contato"></section>
+      <!-- Âncora para rolar até o final da página ao clicar em "Contato" -->
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            Barbearia Soares
+            <span class="span">Barbearia & Estilo</span>
+          </a>
+
+          <form action="" class="input-wrapper">
+
+            <input type="email" name="email_address" placeholder="Digite seu e-mail" required class="email-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Inscrever-se</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Links Rápidos</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nossos Serviços</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nossa Equipe</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nosso Portfólio</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Trabalhe Conosco</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Notícias & Blog</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Serviços</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Corte de Cabelo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Barba & Design</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Coloração de Cabelo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Beleza & Spa</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Massagens Corporais</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Notícias Recentes</p>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
+                    alt="O guia para iniciantes em Sobrancelhas de Henna em Brisbane" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">O guia para iniciantes em Sobrancelhas de Henna em Brisbane</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2025-06-25">25 de junho de 2025</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
+                    alt="Como eliminar pelos indesejados do rosto?" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">Como eliminar pelos indesejados do rosto?</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2025-06-25">25 de junho de 2025</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Fale Conosco</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link">
+               9876 Avenida do Sol, Bairro Estrela, Cidade Nova, ZZ 12345-678
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+0123456789" class="contact-link">+012 (345) 67 89</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="contact-link">Domingo a Sexta, 08h às 21h</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:support@gmail.com" class="contact-link">BarbeariaDoSoares@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">Barbearia Soares</a>. Cuidando do seu estilo com tradição e confiança.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Voltar ao topo" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Script para rolar até o final ao clicar em "Contato" -->
+  <script>
+    document.querySelectorAll('a.navbar-link[data-nav-link]').forEach(function(link) {
+      if (link.textContent.trim().toLowerCase() === 'contato') {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
